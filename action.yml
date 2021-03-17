@@ -1,0 +1,9 @@
+name: CV_Build
+description: Runs pdflatex in Docker to build CV
+
+# Run this workflow every time a new commit pushed to your repository
+on: push
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
