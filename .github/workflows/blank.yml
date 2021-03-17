@@ -36,5 +36,6 @@ jobs:
           echo test, and deploy your project.
 
       - name: Run Docker
-        using: 'docker'
-        image: 'Dockerfile'
+        run: |
+          sudo docker build --tag fedora34 .
+          sudo docker run fedora34
