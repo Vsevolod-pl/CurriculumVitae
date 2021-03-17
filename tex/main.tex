@@ -1,0 +1,80 @@
+\documentclass{resume}
+\usepackage[T2A]{fontenc}
+
+\begin{document}
+
+\fontfamily{ppl}\selectfont
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}m{0.8\textwidth} m{0.2\textwidth}@{}}
+{
+    \Large{Всеволод Плохотнюк} \newline
+    \small{
+        \clink{
+            \href{mailto:vsevolod-pl@yandex.ru}{vsevolod-pl@yandex.ru} \textbf{·} 
+            {\fontdimen2\font=0.75ex +7 916 922 86 99} 
+            \textbf{·} 
+            \href{https://github.com/Vsevolod-pl/}{github.com/Vsevolod-pl}
+        } \newline
+        Москва, Россия
+    }
+} & 
+{
+    \hfill
+    \includegraphics[width=2.8cm]{images/gr.png}
+}
+\end{tabularx}
+\begin{center}
+\begin{tabularx}{\linewidth}{@{}*{2}{X}@{}}
+% left side %
+{
+    \csection{Опыт работы}{\small
+        \begin{itemize}
+            \item \frcontent{Пока нет}{}{}{}
+        \end{itemize}
+    }
+    \csection{Образование}{\small
+        \begin{itemize}
+            \item \frcontent{Бакалавриат (в процсессе)}{Высшая Школа Экономики: Прикладная Математика и Информатика}{}{}
+        \end{itemize}
+    }
+}
+    \csection{HOBBIES \& INTERESTS}{\small
+        \vspace{0.32cm}
+        \begin{tabularx}{\linewidth}{@{}*{4}{>{\centering\arraybackslash}X}@{}}
+            {\centering
+            \includegraphics[width=0.8cm]{images/ML_icon.png}
+            } &
+            {\centering
+            \includegraphics[width=0.8cm]{images/lamp.png}
+            } & 
+            {\centering
+            \includegraphics[width=0.8cm]{images/healthcare.png}
+            } &
+            {\centering
+            \includegraphics[width=0.8cm]{images/cauldron.png}
+            } \\
+            {\footnotesize Machine Learning} & {\footnotesize Problem Solving} & {\footnotesize Healthcare} & {\footnotesize Open Source}
+        \end{tabularx}
+    }
+% end left side %
+& 
+% right side %
+{
+    \csection{Навыки}{\small
+        \begin{itemize}
+            \item \textbf{Technologies} \newline
+            {\footnotesize Python, C++, Tensorflow, Pytorch}{}{}
+            \item \textbf{Patterns \& Practices} \newline
+            {\footnotesize Object Oriented Programming, Functional  Programming}
+        \end{itemize}
+    }
+    \csection{Проекты}{\small
+        \begin{itemize}
+            \item \frcontent{Learning at home \clink{\href{https://https://learning-at-home.github.io/}{[learning-at-home.github.io/]}}}{A library to train large neural networks across the internet.}{}{Python: Pytorch, gRPC}
+        \end{itemize}
+    }
+}
+\end{tabularx}
+\end{center}
+\end{document}
